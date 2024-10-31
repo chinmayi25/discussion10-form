@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<form action="https://formspree.io/f/xrbgpqyb" method="POST"> Connect to formspree.io
+        <fieldset>
+            <legend>Form</legend>
+
+            <h1>Basic Info</h1>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="John" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text"  name="last-name" id="last-name" placeholder="Doe" required>
+
+            <label for="unique-name">Unique Name:</label>
+            <input type="text"  name="unique-name" id="unique-name" placeholder="johndoe" required>
+
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel"  name="phone-number" pattern="[1]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" placeholder="1-123-456-7890" required>
+
+            <label for="program">Program: </label>
+            <input type="text" id="program" name="program" placeholder="MSI" required>
+
+            <div class="radio-group">
+                <h1>Availability</h1>
+                <input type="radio" id="weekdays" name="availability" value="weekdays">
+                <label for="weekdays">Weekdays</label>
+
+                <input type="radio" id="weekend" name="availability" value="weekend">
+                <label for="weekend">Weekend</label>
+            </div>
+
+            <div class="radio-group">
+                <h1>Timing</h1>
+                <input type="radio" id="morning" name="timing" value="morning">
+                <label for="morning">Morning</label>
+
+                <input type="radio" id="afternoon" name="timing" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+
+                <input type="radio" id="evening" name="timing" value="evening">
+                <label for="evening">Evening</label>
+            </div>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
